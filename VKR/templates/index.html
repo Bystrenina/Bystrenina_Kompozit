@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расчет по линейной модели</title>
+</head>
+<body>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <form action="" method="post">
+	
+	<p>
+    	<label for="x1">Соотношение матрица-наполнитель</label>
+    	<input type="text" name="x1">
+	</p>
+	<p>
+    	<label for="x2">Плотность, кг/м3</label>
+    	<input type="text" name="x2">
+	</p>	
+    <p>
+        <label for="x3">модуль упругости, ГПа</label>
+    	<input type="text" name="x3">
+	</p>
+    <p>
+    	<label for="x4">Количество отвердителя, м.%</label>
+    	<input type="text" name="x4">
+	</p>
+	<p>
+    	<label for="x5">Содержание эпоксидных групп,%_2</label>
+    	<input type="text" name="x5">
+	</p>
+	<p>
+    	<label for="x6">Температура вспышки, С_2</label>
+    	<input type="text" name="x6">
+	</p>
+	<p>
+    	<label for="x7">Поверхностная плотность, г/м2</label>
+    	<input type="text" name="x7">
+	</p>
+	<p>
+    	<label for="x8">Потребление смолы, г/м2</label>
+    	<input type="text" name="x8">
+	</p>
+	<p>
+    	<label for="x9">Угол нашивки, град</label>
+    	<input type="text" name="x9">
+	</p>
+	<p>
+    	<label for="x10">Шаг нашивки</label>
+    	<input type="text" name="x10">
+	</p>
+	<p>
+    	<label for="x11">Плотность нашивки</label>
+    	<input type="text" name="x11">
+	</p>
+	<p>
+	    <input type="submit">
+	</p>
+	{% if message2 %}
+        <p>{{ message2 }}</p>
+    {% endif %}
+	
+	
+    </form>
+
+</body>
+</html>
